@@ -52,9 +52,9 @@ Output must match the schema criteria. No extra markdown wrapping keys in the ro
 ${code}
 \`\`\``;
 
-      // Ask Gemini 3.5 Flash for high performance, smart structures, and safety
+      // Ask Gemini 2.5 Flash for high performance, smart structures, and safety
       const response = await ai.models.generateContent({
-        model: 'gemini-3.5-flash',
+        model: 'gemini-2.5-flash',
         contents: prompt,
         config: {
           systemInstruction,
@@ -106,8 +106,7 @@ ${code}
                     title: { type: Type.STRING, description: 'Book, specification, or article title.' },
                     url: { type: Type.STRING, description: 'Direct search query URL or tutorial path.' },
                     description: { type: Type.STRING, description: 'Brief outline of what is taught.' }
-                  },
-                  required: ['title', 'url', 'description']
+                  }
                 },
                 description: 'A curated set of reading reference sources for further study.'
               },
