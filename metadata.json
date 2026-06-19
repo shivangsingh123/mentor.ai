@@ -1,0 +1,8 @@
+{
+  "name": "AI Coding Mentor Pro",
+  "description": "An award-winning SaaS mentor platform running static threat analysis, Big-O complexity calculations, code audits, and interactive side-by-side refactoring reviews using Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
